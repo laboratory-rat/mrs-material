@@ -1,0 +1,8 @@
+// animation durations
+$anim-duration-long: .375s;
+$anim-duration-short: .225s;
+// animation functions
+$anim-function-standart: cubic-bezier(0.4, 0.0, 0.2, 1);
+$anim-function-deceleration: cubic-bezier(0.0, 0.0, 0.2, 1);
+$anim-function-acceleration: cubic-bezier(0.4, 0.0, 1, 1);
+$anim-function-sharp: cubic-bezier(0.4, 0.0, 0.6, 1);

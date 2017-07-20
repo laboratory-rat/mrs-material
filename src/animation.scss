@@ -1,0 +1,78 @@
+// mixin
+@mixin animation-timing-function($function) {
+    animation-timing-function: $function;
+    -o-animation-timing-function: $function;
+    -webkit-animation-timing-function: $function;
+    -moz-animation-timing-function: $functin;
+}
+
+@mixin animation-name($name) {
+    animation-name: $name;
+    -o-animation-name: $name;
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+}
+
+@mixin animation-duration($d) {
+    animation-duration: $d;
+    -o-animation-duration: $name;
+    -webkit-animation-duration: $name;
+    -moz-animation-duration: $name;
+}
+
+// durations
+.mrs-anim__duration-long {
+    @include animation-duration($anim-duration-long);
+}
+
+.mrs-anim__duration-short {
+    @include animation-duration($anim-duration-short);
+}
+
+// durations end
+// functions
+.mrs-anim__function-standart {
+    @include animation-timing-function($anim-function-standart);
+}
+
+.mrs-anim__function-deceleration {
+    @include animation-timing-function($anim-function-deceleration);
+}
+
+.mrs-anim__function-acceleration {
+    @include animation-timing-function($anim-function-acceleration);
+}
+
+.mrs-anim__function-sharp {
+    @include animation-timing-function($anim-function-sharp);
+}
+
+// functions end
+// animations
+.mrs-anim__appear-fade {
+    @include animation-name(mrs-frames--appear-fade);
+}
+
+.mrs-anim__appear-scale {
+    @include animation-name(mrs-frames--appear-scale);
+}
+
+.mrs-anim__appear-slide-top {
+    @include animation-name(mrs-frames--appear-slide-top);
+}
+
+.mrs-anim__appear-slide-left {
+    @include animation-name(mrs-frames--appear-slide-left);
+}
+
+.mrs-anim__left-fade {
+    @include animation-name(mrs-frames--appear-fade);
+    animation-direction: reverse;
+}
+
+.mrs-anim__left-scale {
+    @include animation-name(mrs-frames--appear-scale);
+    animation-direction: reverse;
+}
+
+// animations end
